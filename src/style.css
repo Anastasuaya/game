@@ -9,7 +9,7 @@ body {
   display: inline-block;
   cursor: pointer;
   margin: 0;
-  position: fixed;
+  position: relative;
   width: 70px;
   height: 90px;
   transition: 1s;

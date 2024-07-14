@@ -24,17 +24,45 @@ document.addEventListener ('keydown', (e) => {
     catGirl.style.top = catGirlY + "px"
 })
 
-document.addEventListener('keyup', (e) => {
-    let jump = false
 
-    if(e.key == 'Space') {
-        jump = true
-        $('#catGirl').animate({top: -100}, {duration: 300})
-        $('#catGirl').animate({top: 0}, {duration: 300}, function(){
-            jump = false
-        })
-    }
-})
+
+
+// let jump = false
+
+// let jumpCount = 0
+// let jumpLength = 40
+// let jumpHeight = 0
+
+//  function getJump() {
+//     jumpCount++;
+//     jumpHeight = 4 * jumpLength * Math.sin(Math.PI * jumpCount / jumpLength);
+
+// if (jumpCount > jumpLength) {
+//     jumpHeight = 0;
+//     jump = false;
+//     jumpCount = 0;
+// }
+// }
+
+// document.addEventListener('keydown', (e) => {
+//     let  jumpPressed = false
+//     if (e.code == 'Space') jumpPressed = true
+
+// })
+
+
+// document.addEventListener('keyup', (e) => {
+//     let jump = false
+
+//     if(e.code == 'Space') {
+//         jump = true
+//         catGirl.animate({top: -100}, {duration: 300})
+//         catGirl.animate ({top: 0})
+//     } else {
+//         jump = false
+//     }
+// })
+
 
 
 // document.keyup(function(e){
