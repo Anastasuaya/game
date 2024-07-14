@@ -19,7 +19,13 @@ document.addEventListener ('keydown', (e) => {
         catGirlX += 50
     }  else if (e.code == 'ArrowLeft') {
         catGirlX -= 50
-    } 
+    } else if (e.code == 'ArrowDown') {
+        e.preventDefault()
+        catGirlY += 50
+    }  else if (e.code == 'ArrowUp') {
+        e.preventDefault()
+        catGirlY-= 50
+    }
     catGirl.style.left = catGirlX + "px"
     catGirl.style.top = catGirlY + "px"
 })
