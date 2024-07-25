@@ -19,7 +19,7 @@ document.addEventListener ('keydown', (e) => {
         catGirlX += 50
     }  else if (e.code == 'ArrowLeft') {
         catGirlX -= 50
-    } else if (e.code === 'Space') { 
+    } else if (e.code == 'Space') { 
         catGirl.classList.add('jump')
          setTimeout(() => { 
             catGirl.classList.remove('jump') 
