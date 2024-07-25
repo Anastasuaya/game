@@ -1,34 +1,46 @@
 import './style.css'
 
+// Получаем элемент, который будет прыгать 
+// const catGirl = document.getElementById('catGirl') as HTMLImageElement
 
-const catGirl = document.getElementById('catGirl') as HTMLImageElement
 
 
-document.addEventListener ('keydown', (e) => {
+// Получаем элемент, который будет прыгать 
+const jumpingElement = document.getElementById('jumpingElement') as HTMLDivElement
 
-    let catGirlCharsCoords = catGirl.getBoundingClientRect()
-    let catGirlX = catGirlCharsCoords.x
-    let catGirlY = catGirlCharsCoords.y
+// Функция для обработки нажатия клавиши 
+document.addEventListener('keydown' ,(e) => { 
+ // Проверяем, что нажата клавиша пробела 
+ if (e.code === 'Space') { 
+ // Добавляем класс для анимации прыжка 
+ jumpingElement.classList.add('jump'); 
+ 
+ // Удаляем класс после завершения анимации 
+ setTimeout(() => { 
+ jumpingElement.classList.remove('jump'); 
+ }, 500); // Длительность анимации в миллисекундах (здесь 500 мс) 
+ } 
+}  )
+ 
+// document.addEventListener ('keydown', (e) => {
+
+//     let catGirlCharsCoords = catGirl.getBoundingClientRect()
+//     let catGirlX = catGirlCharsCoords.x
+//     let catGirlY = catGirlCharsCoords.y
 
     
-    if (catGirlX > document.documentElement.clientWidth - catGirl.offsetWidth) catGirlX = document.documentElement.clientWidth - catGirl.offsetWidth
-    if (catGirlX < 0) catGirlX = 0
-    if (catGirlY < 0) catGirlY = 0
-    if (catGirlY > document.documentElement.clientHeight - catGirl.offsetHeight) catGirlY = document.documentElement.clientHeight - catGirl.offsetHeight
-    if (e.code == 'ArrowRight') {
-        catGirlX += 50
-    }  else if (e.code == 'ArrowLeft') {
-        catGirlX -= 50
-    } else if (e.code == 'Space') { 
-        catGirl.classList.add('jump')
-         setTimeout(() => { 
-            catGirl.classList.remove('jump') 
- }, 500)
-    }
-    catGirl.style.left = catGirlX + "px"
-    catGirl.style.top = catGirlY + "px"
-})
-
+//     if (catGirlX > document.documentElement.clientWidth - catGirl.offsetWidth) catGirlX = document.documentElement.clientWidth - catGirl.offsetWidth
+//     if (catGirlX < 0) catGirlX = 0
+//     if (catGirlY < 0) catGirlY = 0
+//     if (catGirlY > document.documentElement.clientHeight - catGirl.offsetHeight) catGirlY = document.documentElement.clientHeight - catGirl.offsetHeight
+//     if (e.code == 'ArrowRight') {
+//         catGirlX += 50
+//     }  else if (e.code == 'ArrowLeft') {
+//         catGirlX -= 50
+//     } 
+//     catGirl.style.left = catGirlX + "px"
+//     catGirl.style.top = catGirlY + "px"
+// })
 
 // Получаем элемент, который будет прыгать 
 // const jumpingElement = document.getElementById('jumpingElement'); 
