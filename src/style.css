@@ -10,7 +10,7 @@ body {
     background-color: rgb(43, 255, 0);  */
     position: relative; 
     top: 0; 
-    transition: top 0.5s; /* Длительность анимации */ 
+    transition: 0.5s; /* Длительность анимации */ 
    } 
    
 /* #catGirl {
