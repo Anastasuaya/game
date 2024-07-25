@@ -12,8 +12,13 @@ body {
   position: relative;
   width: 70px;
   height: 90px;
-  transition: 1s;
+  transition: 0.5s;
+
 }
+
+ #catGirl.jump { 
+  top: -100px; /* Высота прыжка */ 
+ }
 
 #rectangle {
   width: 200px;

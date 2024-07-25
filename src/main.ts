@@ -19,19 +19,50 @@ document.addEventListener ('keydown', (e) => {
         catGirlX += 50
     }  else if (e.code == 'ArrowLeft') {
         catGirlX -= 50
-    } else if (e.code == 'ArrowDown') {
-        e.preventDefault()
-        catGirlY += 50
-    }  else if (e.code == 'ArrowUp') {
-        e.preventDefault()
-        catGirlY-= 50
+    } else if (e.code === 'Space') { 
+        catGirl.classList.add('jump')
+         setTimeout(() => { 
+            catGirl.classList.remove('jump') 
+ }, 500)
     }
     catGirl.style.left = catGirlX + "px"
     catGirl.style.top = catGirlY + "px"
 })
 
 
+// Получаем элемент, который будет прыгать 
+// const jumpingElement = document.getElementById('jumpingElement'); 
+ 
+// Функция для обработки нажатия клавиши 
+// function handleKeyPress(event) { 
+ // Проверяем, что нажата клавиша пробела 
+//  if (event.code === 'Space') { 
+ // Добавляем класс для анимации прыжка 
+//  jumpingElement.classList.add('jump'); 
+ 
+ // Удаляем класс после завершения анимации 
+//  setTimeout(() => { 
+//  jumpingElement.classList.remove('jump'); 
+//  }, 500); // Длительность анимации в миллисекундах (здесь 500 мс) 
+//  } 
+// } 
+ 
+// Добавляем обработчик события на нажатие клавиши 
+// document.addEventListener('keydown', handleKeyPress);
 
+// css: 
+// #jumpingElement { 
+//  width: 50px; 
+//  height: 50px; 
+//  background-color: red; 
+//  position: relative; 
+//  top: 0; 
+//  transition: top 0.5s; /* Длительность анимации */ 
+// } 
+ 
+// #jumpingElement.jump { 
+//  top: -100px; /* Высота прыжка */ 
+// }
 
 // let jump = false
 
