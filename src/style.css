@@ -32,3 +32,36 @@ body {
   background: red;
 
 } */
+
+#container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  border: 1px solid #000;
+}
+
+.source {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 50px;
+}
+
+#fallingElement {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  background-color: #ff6347;
+  text-align: center;
+  line-height: 50px;
+  transition: top 2s ease-out;
+}
