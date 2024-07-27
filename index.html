@@ -1,23 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
 
-<img id="jumpingElement" src="/7-2.png" style="width: 100px;" alt="">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
 
-  <div id="rectangle">
+<body>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Начать игру?</h2>
+      <button id="yesbutton">Да</button>
+      <button id="nobutton">Нет</button>
+    </div>
+  </div>
 
   </div>
 
-  <div id="container">
 
-</div>
+  <div id="objgame">
+    <img id="jumpingElement" src="/7-2.png" style="width: 90px;" alt="">
+    <div id="blocks" class="blocks">
+      <div id="rectangle"></div>
+      <div id="rectangle"></div>
+      <div id="rectangle"></div>
+      <div id="rectangle"></div>
+    </div>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  </div>
+
+  <!-- <div id="container">
+    <div id="fallingObject"></div>
+</div> -->
+
+
+  <!-- <div id="container">
+
+</div> -->
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

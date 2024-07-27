@@ -1,8 +1,11 @@
 
 body {
   margin: 0;
-  background:url(public/background.png);
+  background:url(/menu.jpg);
+  width: 100%;
 }
+
+
 
 #jumpingElement { 
     /* width: 50px; 
@@ -13,55 +16,81 @@ body {
     transition: 0.5s; /* Длительность анимации */ 
    } 
    
-/* #catGirl {
-  position: relative;
-  width: 70px;
-  height: 90px;
-  top: 0;
-  transition: 0.5s;
-
-} */
 
  #jumpingElement.jump { 
   top: -100px; /* Высота прыжка */ 
   } 
 
-/* #rectangle {
+#rectangle {
   width: 200px;
   height: 30px;
-  background: red;
+  background-color: red;
 
+}
+
+.blocks {
+  display: flex;
+}
+/* 
+#container {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#fallingObject {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 } */
 
-#container {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  border: 1px solid #000;
+
+
+
+
+ 
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.808);
 }
 
-.source {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 50px;
-  background-color: #f0f0f0;
+.modal-content {
+  display: flex;
+    width: 500px;
+    height: 250px;
+  background-image: url(/menu.jpg);
+  padding: 20px;
+  border: white, 5px solid ;
+  border-radius: 5px;
   text-align: center;
-  line-height: 50px;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#fallingElement {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 50px;
-  background-color: #ff6347;
-  text-align: center;
-  line-height: 50px;
-  transition: top 2s ease-out;
+button {
+  border: rgb(93, 45, 138) 3px solid;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+} 
+
+button:hover {
+  background-color: rgb(93, 45, 138);
+  border: white, 3px solid;
+  color: white;
+  transition: 1s;
 }
