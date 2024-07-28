@@ -31,30 +31,7 @@ body {
 .blocks {
   display: flex;
 }
-/* 
-#container {
-  width: 300px;
-  height: 500px;
-  border: 2px solid black;
-  position: relative;
-  overflow: hidden;
-}
 
-#fallingObject {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
-
-
-
-
- 
 .modal {
   display: flex;
   justify-content: center;
