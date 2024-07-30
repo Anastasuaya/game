@@ -52,15 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => { jumpingElement.classList.remove('jump') }, 500) // Длительность анимации в миллисекундах 
       }
 
-      // Обработчик события клика на кнопку "Нет"
-      noButton.addEventListener('click', () => {
-        // modal.style.display = 'none' // Скрыть модальное окно
-        // const newWindow = window.open("", "new window", "")
-        // newWindow.document.write("<p>Hello, World!</p>")
-      })
+     
     })
 
   })
+   // Обработчик события клика на кнопку "Нет"
+      noButton.addEventListener('click', () => {
+        modal.style.display = 'none' // Скрыть модальное окно
+        const newWindow = window.open("", "new window", "")
+        newWindow.document.write("<p>Иди играть</p>")
+      })
 })
 
 
