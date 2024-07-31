@@ -12,5 +12,9 @@
     "@types/jquery": "^3.5.30",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "path": "^0.12.7"
   }
 }
