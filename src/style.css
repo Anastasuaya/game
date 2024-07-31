@@ -54,6 +54,15 @@ position: relative;
   justify-content: center;
   flex-direction: column;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  transition: 1s;
+}
 
 button {
   border: rgb(93, 45, 138) 3px solid;
@@ -63,7 +72,7 @@ button {
   cursor: pointer;
 } 
 
-button:hover {
+ button:hover {
   background-color: rgb(93, 45, 138);
   border: white, 3px solid;
   color: white;
