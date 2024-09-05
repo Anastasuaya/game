@@ -65,6 +65,30 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
+const fallingObject: HTMLElement | null = document.getElementById('falling-object');
+
+if (fallingObject) {
+    let fallInterval: any;
+
+    const startFalling = () => {
+        let position = 0;
+        const fallDistance = window.innerHeight; // высота экрана
+
+        fallInterval = setInterval(() => {
+            if (position >= fallDistance) {
+                clearInterval(fallInterval);
+            } else {
+                position += 5; // скорость падения
+                fallingObject.style.top = position + 'px';
+            }
+        }, 20); // временной интервал (каждые 20 мс)
+    };
+
+    // Начинаем анимацию падения через 1 секунду после загрузки
+    setTimeout(startFalling, 1000);
+}
+
+
 // const player = document.getElementById('player') as HTMLElement;
 // const finish = document.getElementById('finish') as HTMLElement;
 // const obstacle = document.getElementById('obstacle') as HTMLElement;
